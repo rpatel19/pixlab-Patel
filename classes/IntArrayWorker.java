@@ -1,3 +1,4 @@
+//package com.gradscope.pixlab
 public class IntArrayWorker
 {
   /** two dimensional matrix */
@@ -10,11 +11,36 @@ public class IntArrayWorker
   {
     matrix = theMatrix;
   }
-  
+
   /**
-   * Method to return the total 
+   * Method to return the total
    * @return the total of the values in the array
    */
+public int getCount(int value) {
+  int count = 0;
+  for (int[] rowArray: matrix){
+    for(int i:rowArray){
+      if (i== value){
+        count++;
+      }
+    }
+  }
+  return count;
+}
+
+public int getLargest(){
+int largest= Integer.MIN_VALUE;
+for (int[] row:matrix){
+  for (int i:  row){
+    if (i> largest){
+      largest = i;
+    }
+  }
+}
+return largest;
+}
+
+
   public int getTotal()
   {
     int total = 0;
@@ -51,17 +77,14 @@ public class IntArrayWorker
   public void fillCount()
   {
     int numCols = matrix[0].length;
-    int count = 1;
-    for (int row = 0; row < matrix.length; row++)
-    {
-      for (int col = 0; col < numCols; col++)
-      {
+    int count = 0;
+    for (int row = 0; row < matrix.length; row++) {
+      for (int col = 0; col < numCols; col++) {
         matrix[row][col] = count;
         count++;
       }
     }
   }
-  
   /**
    * print the values in the array in rows and columns
    */
@@ -98,5 +121,6 @@ public class IntArrayWorker
       }
     }
   }
+
  
 }
