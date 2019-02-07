@@ -1,4 +1,4 @@
-//package com.gradscope.pixlab
+package com.gradscope.pixlab
 public class IntArrayWorker
 {
   /** two dimensional matrix */
@@ -40,6 +40,13 @@ for (int[] row:matrix){
 return largest;
 }
 
+public int getColTotal(int column){
+    int total = 0;
+    for (int[] rowArray : matrix){
+        total += rowArray[column];
+    }
+    return total;
+}
 
   public int getTotal()
   {
