@@ -1,4 +1,4 @@
-package com.gradscope.pixlab
+package com.gradescope.pixlab
 public class IntArrayWorkerTester
 {
   /** method to test setMatrix */
@@ -8,7 +8,7 @@ public class IntArrayWorkerTester
     int[][] nums = {{1, 1, 1} ,{2,2,2}};
     worker.setMatrix(nums);
     System.out.println("This should have all 1's in first row and all 2's in second");
-    worker.pr int();
+    worker.pr  int();
   }
   
   /** Method to test fillPattern1 */
