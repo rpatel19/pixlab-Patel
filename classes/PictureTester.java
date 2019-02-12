@@ -16,6 +16,19 @@ public class PictureTester
     beach.zeroBlue();
     beach.explore(); // comment these out in repl.it
 
+
+    // uncomment this in repl.it to test your code!!
+    // beach.write("imagesOutput/beach.jpg");
+  }
+
+  public static void testkeepOnlyBlue()
+  {
+    Picture beach = new Picture("images/beach.jpg");
+    beach.explore(); // comment these out in repl.it
+    beach.keepOnlyBlue();
+    beach.explore(); // comment these out in repl.it
+
+
     // uncomment this in repl.it to test your code!!
     // beach.write("imagesOutput/beach.jpg");
   }
@@ -62,7 +75,7 @@ public class PictureTester
     // and comment out the ones you don't want
     // to run
     testZeroBlue();
-    //testKeepOnlyBlue();
+    testkeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
     //testNegate();
