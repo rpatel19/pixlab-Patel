@@ -1,3 +1,5 @@
+//package com.gradescope.pixlab;
+
 /**
  * This class contains class (static) methods
  * that will help you test the Picture class 
@@ -60,16 +62,24 @@ public class PictureTester
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
-    Picture caterpillar = new Picture("caterpillar.jpg");
+    Picture caterpillar = new Picture("images/caterpillar.jpg");
     caterpillar.explore();
     caterpillar.mirrorVertical();
     caterpillar.explore();
   }
-  
+
+  public static void testMirrorVerticalRightToLeft()
+  {
+    Picture caterpillar = new Picture("images/caterpillar.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorVerticalRightToLeft();
+    caterpillar.explore();
+  }
+
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
   {
-    Picture temple = new Picture("temple.jpg");
+    Picture temple = new Picture("images/temple.jpg");
     temple.explore();
     temple.mirrorTemple();
     temple.explore();
@@ -98,14 +108,15 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
-    testkeepOnlyBlue();
+    //testZeroBlue();
+    //testkeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
-    testNegate();
-    testGrayscale();
+    //testNegate();
+    //ftestGrayscale();
     //testFixUnderwater();
     //testMirrorVertical();
+    testMirrorVerticalRightToLeft();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
